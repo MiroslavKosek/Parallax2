@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>Battlefield 2042</title>
+</head>
+<body>
+    <section>
+        <header>
+            <a href="#" class="logo">Battlefield 2042</a>
+            <div class="toggle"></div>
+        </header>
+        <img src="./images/background.jpg" class="bg">
+        <img src="./images/soldier.png" class="soldier">
+        <div class="content">
+            <h2>WELCOME TO 2042</h2>
+            <p>Battlefields changing before your eyes. A cutting-edge arsenal at your disposal. The grand return of all-out warfare. Adapt and overcome in massive-scale 128 player battles where dynamic storms, environmental hazards, total combat freedom, and Battlefield's signature destruction spark a new breed of Only in Battlefield moments.</p>
+            <a href="#">Game Overview</a>
+        </div>
+        <ul class="sci">
+            <li><a href="#"><img src="./images/facebook.png"></a></li>
+            <li><a href="#"><img src="./images/twitter.png"></a></li>
+            <li><a href="#"><img src="./images/instagram.png"></a></li>
+        </ul>
+
+    </section>
+    <script type="text/javascript">
+        document.addEventListener("mousemove", function(e){
+            const bg = document.querySelector('.bg')
+            const soldier = document.querySelector('.soldier')
+            const content = document.querySelector('.content')
+
+            bg.style.width = 100 + e.pageX/100 + '%';
+            bg.style.height = 100 + e.pageX/100 + '%';
+
+            soldier.style.right = 100 + e.pageX/2 + 'px';
+
+            content.style.left = 100 + e.pageX/2.5 + 'px';
+        })
+    </script>
+</body>
+</html>
